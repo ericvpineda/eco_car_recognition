@@ -15,10 +15,10 @@
   <img src="../static/img/bgImage.jpg" alt="background-image">
   
   <nav class="navbar">
-    <div class="container">
+    <div class="container d-flex justify-content-center">
         <a class="navbar-brand" href="home.html">
           
-          <img id="logo" src="../static/img/ecoCarLogo.png" alt="">
+          {% comment %} <img id="logo" src="../static/img/ecoCarLogo.png" alt=""> {% endcomment %}
           {% comment %} <div class="logo-text"> {% endcomment %}
             {% comment %} </div> {% endcomment %}
         </a>
@@ -37,7 +37,7 @@
       <!-- Your page content goes here -->
       <h1>ECO CAR RECOGNIZER</h1>
       <p>Welcome to Eco Car Recognizer, the innovative web app that helps you make informed choices for sustainable transportation. Join us on this eco-friendly journey and drive towards a cleaner, sustainable future.</p>
-      <a href="#" class="try-it-button">
+      <a href="{% url 'index' %}" class="try-it-button">
         Try it here
         <span class="arrow">&#8594;</span>
       </a>

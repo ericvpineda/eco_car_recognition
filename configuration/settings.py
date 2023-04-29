@@ -14,7 +14,8 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+MEDIA_ROOT = ""
+MEDIA_URL = ""
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -26,18 +27,21 @@ SECRET_KEY = 'django-insecure-dk1-#x*--cuxi$ofrw!ms!=03mf@gqj(3jm5$h-foffwj*630%
 DEBUG = True
 
 ALLOWED_HOSTS = []
+SITE_ID=1
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.sessions',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'project',
-    'livereload'
+    'livereload',
+    'django.contrib.sites'
 ]
 
 MIDDLEWARE = [
@@ -125,5 +129,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "project/static",
 ]
