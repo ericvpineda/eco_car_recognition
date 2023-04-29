@@ -6,3 +6,5 @@ notes.md
 # Folders
 .venv  
 __pycache__
+dataset
+variables
