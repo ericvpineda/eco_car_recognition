@@ -7,7 +7,7 @@ from django.http import HttpResponse
 def home(request):
     
     # TODO: Remove and render home page
-    return render(request, 'home.html')
+    return HttpResponse("Home page")
 
 # Page that contains car recognition application
 def index(request):
