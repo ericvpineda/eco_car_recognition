@@ -164,6 +164,7 @@ color: #000000;
 }
 
 .rectangle {
+
     position: absolute;
     width: 946px;
     height: 517px;
@@ -173,10 +174,14 @@ color: #000000;
     border: 3px solid #274126;
     border-radius: 80px;
 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   
   .instruction {
-    position: absolute;
+    /* position: absolute; */
     width: 193px;
     height: 29px;
     left: calc(50% - 193px/2 - 6.5px);
@@ -187,12 +192,15 @@ color: #000000;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
 /* Rectangle 5 */
 
 .upload-box {
-    position: absolute;
+    /* position: absolute; */
     width: 329px;
     height: 64px;
     left: calc(50% - 329px/2 - 0.5px);
@@ -219,8 +227,9 @@ color: #000000;
   }
 
 .image{/* material-symbols:upload-rounded */
-    position: absolute;
-    left: 100px;
-    top: 1px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
