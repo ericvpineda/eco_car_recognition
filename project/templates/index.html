@@ -12,16 +12,33 @@
     
 </head>
 <body>
-    <h3 class="name">Eco Recognizer Tool</h3>
-    <p>Simply drag and drop (or upload) an image of your car, and we'll identify its brand, model, and evaluate its environmental impact.</p>
+    <div></div>
+    <h3 class="page-name">Eco Recognizer Tool</h3>
+    <p class="text">Simply drag and drop (or upload) an image of your car, and we'll identify its brand, model, and evaluate its environmental impact.</p>
     <nav>
         <ul>
-            <li><a href=" ">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Alternatives</a></li>
-            <li><a href="#">Recognizer Tool</a></li>
+            <div class="ellipse"></div>
+            <li class="logo-name"><a href="#">EcoRecognizer</a></li>
+            <li class="text-home"><a href="#">Home</a></li>
+            <li class="text-info"><a href="#">About Us</a></li>
+            <li class="text-alt"><a href="#">Alternatives</a></li>
+            <li class="text-tool"><a href="#">Recognizer Tool</a></li>
         </ul>
     </nav>
-
+    <div>
+        <div class="rectangle">
+            <div class="instrcution">
+              Drag Image Here
+            </div>
+            <label for="upload-image" class="upload-label">
+                <div class="upload-box">
+                  <span class="upload-icon">+</span>
+                  <span class="upload-text">Upload Image</span>
+                </div>
+              </label>
+              <input type="file" id="upload-image" class="upload-input" accept="image/*">
+              <div style="text-align: center;" ><img class="image" src="image.png-removebg-preview.png"></div>
+        </div>
+    </div>
 </body>
 </html>
