@@ -10,28 +10,29 @@
 
   <title>My Website</title>
 </head>
-<body>
-  <div class="bg-image">
-    <div class="gradient-overlay"></div>
-    <img src="bgImage.jpg" alt="background-image">
-
-    <nav class="navbar">
-      <div class="container">
+<body class="bg-image">
+  <div class="gradient-overlay"></div>
+  <img src="../static/img/bgImage.jpg" alt="background-image">
+  
+  <nav class="navbar">
+    <div class="container">
         <a class="navbar-brand" href="home.html">
           
-          <span class="logo-text">Logo Text</span>
+          <img id="logo" src="../static/img/ecoCarLogo.png" alt="">
+          {% comment %} <div class="logo-text"> {% endcomment %}
+            {% comment %} </div> {% endcomment %}
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="alternatives.html">Alternatives</a></li>
-            <li><a href="tool.html">Recognizer Tool</a></li>
+            <li><a href="{% url 'index' %}">Recognizer Tool</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
+    
     <div class="content">
       <!-- Your page content goes here -->
       <h1>ECO CAR RECOGNIZER</h1>
@@ -41,6 +42,5 @@
         <span class="arrow">&#8594;</span>
       </a>
     </div>
-  </div>
 </body>
 </html>

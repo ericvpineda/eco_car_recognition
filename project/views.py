@@ -6,14 +6,14 @@ from django.http import HttpResponse
 # Page for starting point for website
 def home(request):
     
-    # TODO: Remove and render home page
     return render(request, 'home.html')
 
 # Page that contains car recognition application
 def index(request):
 
     # TODO: Remove and render index page
-    return HttpResponse("Index page")
+    return render(request, 'index.html')
+
 
 # Page that shows results of car recognition and clean car information 
 def show(request, id):
