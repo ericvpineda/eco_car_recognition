@@ -125,15 +125,15 @@ body {
   
   .content h1 {
     font-size: 65px;
-    margin-left: 80px !important;
-    margin-right: 80px!important;
+    margin-left: 80px !impoortant;
+    margin-right: 80px!impoortant;
     margin-bottom: 30px;
    }
 
    .content p {
     font-size: 20px;
-    margin-left: 80px !important;
-    margin-right: 80px!important;
+    margin-left: 80px !impoortant;
+    margin-right: 80px!impoortant;
     margin-bottom: 30px;
    }
   
@@ -156,11 +156,6 @@ body {
   
   .try-it-button .arrow {
     margin-left: 5px;
-  }
-
-  #logo {
-    max-height: 2px !important;
-    max-width: 2px !important;
   }
   
   

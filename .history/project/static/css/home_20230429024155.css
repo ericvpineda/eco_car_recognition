@@ -1,0 +1,8 @@
+.backgound {
+    transform: rotate(90deg);
+}
+
+.bg-image {
+    height: 100vh;
+    width: 100vw;
+}
