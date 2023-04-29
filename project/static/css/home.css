@@ -7,25 +7,56 @@ body {
   }
   
 
-/* material-symbols:directions-car-rounded */
-#car{
-position: absolute;
-width: 36px;
-height: 39px;
-left: 164px;
-top: 83px;
-z-index: 1;
-}
+  .text-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+  }
 
-/* material-symbols:arrow-right-alt-rounded */
-#arrow{
-position: absolute;
-width: 58px;
-height: 44px;
-left: 750px;
-top: 649px;
+  .logo{
+    position: absolute;
+    width: 72px;
+    height: 78px;
+    left: 140px;
+    top: 60px;
+  }
+  a {
+      text-decoration: inherit;
+      color:white;
+      cursor: pointer !important;
+  }
 
-}
+  .navbar{
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem
+  }
+  .navitem{
+    font-family: 'Inter';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .navitem:hover{
+    transform: scale(1.2);
+    transition: transform 0.1s ease;
+  }
+  
+  .navbarTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+  /* identical to box height */
+  
+  text-align: center;
+  }
 
 /* Frame 1 */
 #frame1{
@@ -53,73 +84,38 @@ top: 80px;
 background: #FFFFFF;
 }
 
-
-
-/* Rectangle 2 */
-#Rectangle2{
-/* Vector */
-position: absolute;
-left: 12.5%;
-right: 12.5%;
-top: 20.83%;
-bottom: 12.5%;
-background: #000000;
-    position: absolute;
-width: 216px;
-height: 50px;
-left: 612px;
-top: 646px;
-background: rgba(214, 235, 86, 0.75);
-border-radius: 80px;
-z-index: 1;
-}
-
-/* Rectangle 3 */
-#Rectangle3 {
-position: absolute;
-width: 100%;
-height: 100%;
-left: 0px;
-top: 0px;
-background: linear-gradient(180deg, rgba(24, 42, 27, 0) 0%, #07110A 100%);
-  }
-  
-  
-
 /* ECO CAR RECOGNIZER */
 .Etitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 96px;
+  line-height: 116px;
+  color: #FFFFFF;
+  border:none;
+}
 
-position: absolute;
-width: 10670px;
-height: 116px;
-left: 186px;
-top: 260px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 100;
-font-size: 96px;
-line-height: 116px;
-color: #FFFFFF;
-border:none;
-    }
+  
     
-    ul li {
+    ul li{
         list-style: none;
         font-weight: 100
       }
 
-  ul li a {
+    ul li a{
         color: #FFFFFF;
         text-decoration: none;
       }
 
+    /* ul li a:hover{
+    transform: scale(1.1);
+    text-decoration:none; 
+    transition: 0.5ms;
+    } */
+
+
           /* EcoRecognizer */
     .eco{
-    position: absolute;
-    width: 232px;
-    height: 39px;
-    left: 211px;
-    top: 52px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -128,50 +124,10 @@ border:none;
     text-align: center;
     color: #FFFFFF;
     }
-
-    .home,.aboutUs, .alter, .Recognizer {
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    font: 400 24px/29px 'Inter';
-
-    }
-    
-    .home {
-        width: 200px;
-        height: 29px;
-        left: 612px;
-        top: 91px;
-
-    }
-    
-    .aboutUs {
-    width: 200px;
-    height: 29px;
-    left: 740px;
-    top: 91px;
-    }
-    
-    .alter {
-    width: 200px;
-    height: 29px;
-    left: 907px;
-    top: 91px;
-    }
-    
-    .Recognizer {
-    width: 250px;
-    height: 29px;
-    left: 1103px;
-    top: 91px;
-    }
     
     .welcome {
     width: 986px;
     height: 92px;
-    top: 480px;
-    left: 227px;
-    position: absolute;
     font: 500 24px/29px 'Inter';
     text-align: center;
     color: #FFFFFF;
@@ -179,43 +135,39 @@ border:none;
 
 /* Try it here */
 .try {
-position: absolute;
-width: 220px;
-height: 50px; 
-left: 610px;
-top: 645px;
- font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px; 
- line-height: 29px; 
-text-align: center; 
-background-color: transparent;
-border-color: transparent;
-z-index: 1;
-    }
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px; 
+    line-height: 29px;
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgb(30, 213, 17) 0%, rgb(65, 154, 62) 100%);
+    border: 5px solid black;
+    transition: all 0.3s ease-in-out;
+  }
+.try:hover {
+  border-color: white;
+}
     
 
 /* Rectangle 3 */
 .my-rectangle {
-    position: absolute;
-    width: 1440px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
-    background: linear-gradient(180deg, rgba(24, 42, 27, 0) 0%, #07110A 100%);
-  }
+  background: linear-gradient(180deg, rgba(24, 42, 27, 0) 0%, #07110A 100%);
+}
   
-  #frame1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    position: absolute;
-    width: 1460px;
-    height: 1192px;
-    left: -10px;
-    top: -10px;
-  }
+#frame1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+}
   
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
