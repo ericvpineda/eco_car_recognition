@@ -3,7 +3,6 @@ from keras.models import Sequential
 from keras.preprocessing.image import ImageDataGenerator
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
-from utils import get_image_properties
 import matplotlib.pyplot as plt 
 import numpy as np
 

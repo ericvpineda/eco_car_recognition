@@ -22,11 +22,11 @@
           {% comment %} <div class="logo-text"> {% endcomment %}
             {% comment %} </div> {% endcomment %}
         </a>
-        <div class="navbar-links">
+        <div class="navbar-links">1
           <ul>
             <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="alternatives.html">Alternatives</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'alternatives' %}">Alternatives</a></li>
             <li><a href="{% url 'index' %}">Recognizer Tool</a></li>
           </ul>
         </div>

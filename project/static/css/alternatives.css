@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #9AB268 0%, #07110A 100%);
+  }
+  
+  .header {
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  .header h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .header p {
+    margin-bottom: 2rem;
+  }
+  
+  .header p {
+    margin-bottom: none !important;
+  }
+  
+  
+  .featured-cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .car-tile {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .car-tile img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .car-tile h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .car-tile h2 {
+    text-align: center;
+  }
+  
+  .car-tile p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  :root {
+    --bg: #fdfdfd;
+    --highlight1: #9AB268;
+    --highlight2: #FFEDBC;
+    --color: #1a1e24;
+    --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --font-head: "Space Mono", Consolas, Menlo, Monaco, "Courier New", monospace;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Adjusted to make columns the same height */
+    gap: 2rem;
+    margin: 2rem;
+  }
+  
+  .driving-practices,
+  .maintenance-practices {
+    flex: 1; /* Adjusted to allow columns to grow equally */
+    background-color: var(--bg);
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+  }
+  
+  .container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .container h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .container h3::before {
+    content: counter(list);
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1;
+    width: 3rem;
+    height: 3rem;
+    background: var(--highlight1);
+    color: var(--bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  
+  .container p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--color);
+  }
+  
+  .container ol {
+    padding-left: 1.5rem;
+  }
+  
+  .container li {
+    counter-increment: list;
+    margin-bottom: 2rem;
+    list-style-type: none
+  }
+  
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Optional: Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    .driving-practices,
+    .maintenance-practices {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  
