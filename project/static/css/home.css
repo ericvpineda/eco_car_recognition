@@ -1,38 +1,221 @@
-.Etitle{
+body {
+    background-image: url('https://cdn.discordapp.com/attachments/1097651532540948698/1101682269174894612/damir-babacic--5fL5uvvIDQ-unsplash.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+  }
+  
+
+/* material-symbols:directions-car-rounded */
+#car{
+position: absolute;
+width: 36px;
+height: 39px;
+left: 164px;
+top: 83px;
+z-index: 1;
+}
+
+/* material-symbols:arrow-right-alt-rounded */
+#arrow{
+position: absolute;
+width: 58px;
+height: 44px;
+left: 750px;
+top: 649px;
+
+}
+
+/* Frame 1 */
+#frame1{
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1460px;
+height: 1192px;
+left: -10px;
+top: -10px;
+}
+
+/* Ellipse 1 */
+#Ellipse1{
+position: absolute;
+width: 50px;
+height: 50px;
+left: 157px;
+top: 80px;
+background: #FFFFFF;
+}
+
+
+
+/* Rectangle 2 */
+#Rectangle2{
+/* Vector */
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 20.83%;
+bottom: 12.5%;
+background: #000000;
     position: absolute;
-    width: 1067px;
-    height: 116px;
-    left: 186px;
-    top: 396px;
+width: 216px;
+height: 50px;
+left: 612px;
+top: 646px;
+background: rgba(214, 235, 86, 0.75);
+border-radius: 80px;
+z-index: 1;
+}
+
+/* Rectangle 3 */
+#Rectangle3 {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 0px;
+background: linear-gradient(180deg, rgba(24, 42, 27, 0) 0%, #07110A 100%);
+  }
+  
+  
+
+/* ECO CAR RECOGNIZER */
+.Etitle {
+
+position: absolute;
+width: 10670px;
+height: 116px;
+left: 186px;
+top: 260px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 100;
+font-size: 96px;
+line-height: 116px;
+color: #FFFFFF;
+border:none;
+    }
     
+    ul li {
+        list-style: none;
+        font-weight: 100
+      }
+
+  ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+          /* EcoRecognizer */
+    .eco{
+    position: absolute;
+    width: 232px;
+    height: 39px;
+    left: 211px;
+    top: 52px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
-    font-size: 96px;
-    line-height: 116px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+
+    .home,.aboutUs, .alter, .Recognizer {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font: 400 24px/29px 'Inter';
+
+    }
     
-    color:black;
+    .home {
+        width: 200px;
+        height: 29px;
+        left: 612px;
+        top: 91px;
+
+    }
     
-    border: 1px solid #FFFFFF;
-}
+    .aboutUs {
+    width: 200px;
+    height: 29px;
+    left: 740px;
+    top: 91px;
+    }
+    
+    .alter {
+    width: 200px;
+    height: 29px;
+    left: 907px;
+    top: 91px;
+    }
+    
+    .Recognizer {
+    width: 250px;
+    height: 29px;
+    left: 1103px;
+    top: 91px;
+    }
+    
+    .welcome {
+    width: 986px;
+    height: 92px;
+    top: 480px;
+    left: 227px;
+    position: absolute;
+    font: 500 24px/29px 'Inter';
+    text-align: center;
+    color: #FFFFFF;
+    }
 
+/* Try it here */
+.try {
+position: absolute;
+width: 220px;
+height: 50px; 
+left: 610px;
+top: 645px;
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px; 
+ line-height: 29px; 
+text-align: center; 
+background-color: transparent;
+border-color: transparent;
+z-index: 1;
+    }
+    
 
-
-/* damir-babacic--5fL5uvvIDQ-unsplash 1 */
-.damir-babacic{
-width: 1172px;
-height: 1440px;
-
-background: url(damir-babacic--5fL5uvvIDQ-unsplash.jpg);
-mix-blend-mode: darken;
-transform: rotate(90deg);
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-
-body {
-    background-image: url("path/thttps://cdn.discordapp.com/attachments/1097651532540948698/1101682269174894612/dhttps://cdn.discordapp.com/attachments/1097651532540948698/1101682269174894612/damir-babacic--5fL5uvvIDQ-unsplash.jpgamir-babacic--5fL5uvvIDQ-unsplash.jpgo/your/image.png");
+/* Rectangle 3 */
+.my-rectangle {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(24, 42, 27, 0) 0%, #07110A 100%);
   }
+  
+  #frame1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    width: 1460px;
+    height: 1192px;
+    left: -10px;
+    top: -10px;
+  }
+  
