@@ -1,0 +1,38 @@
+.Etitle{
+    position: absolute;
+    width: 1067px;
+    height: 116px;
+    left: 186px;
+    top: 396px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 116px;
+    
+    color:black;
+    
+    border: 1px solid #FFFFFF;
+}
+
+
+
+/* damir-babacic--5fL5uvvIDQ-unsplash 1 */
+.damir-babacic{
+width: 1172px;
+height: 1440px;
+
+background: url(damir-babacic--5fL5uvvIDQ-unsplash.jpg);
+mix-blend-mode: darken;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+body {
+    background-image: url("path/thttps://cdn.discordapp.com/attachments/1097651532540948698/1101682269174894612/dhttps://cdn.discordapp.com/attachments/1097651532540948698/1101682269174894612/damir-babacic--5fL5uvvIDQ-unsplash.jpgamir-babacic--5fL5uvvIDQ-unsplash.jpgo/your/image.png");
+  }

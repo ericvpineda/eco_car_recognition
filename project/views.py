@@ -7,13 +7,13 @@ from django.http import HttpResponse
 def home(request):
     
     # TODO: Remove and render home page
-    return HttpResponse("Home page")
+    return render(request, "home.html")
 
 # Page that contains car recognition application
 def index(request):
 
     # TODO: Remove and render index page
-    return HttpResponse("Index page")
+    return HttpResponse("Index pagesss")
 
 # Page that shows results of car recognition and clean car information 
 def show(request, id):
