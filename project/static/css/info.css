@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background-attachment: fixed;
+    scroll-snap-type: y mandatory;
+  overflow-y: scroll;
   }
 
 .page-name{
@@ -27,118 +29,59 @@ line-height: 39px;
 color: #000000;
 }
 
-  .logo-name{
-    /* EcoRecognizer */
-
-
-position: absolute;
-width: 232px;
-height: 39px;
-left: 211px;
-top: 86px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 39px;
-/* identical to box height */
-
-text-align: center;
-
-color: #FFFFFF;
+.list{
+    list-style: none;
 }
 
-.text-home{
-    /* Home */
+a:link, a:visited, a:active{
+    background-color: linear-gradient(to bottom, #9AB268, #000000);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    transition: 0.1ms;
+  }
 
+  .navbar{
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem
+    /* list-style:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  }
+  .navitem{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  
+  .navbarTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+  /* identical to box height */
+  
+  text-align: center;
+  }
 
-position: absolute;
-width: 67px;
-height: 29px;
-left: 612px;
-top: 91px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-
-
-color: #FFFFFF;
-}
-
-.text-info{
-    /* About Us */
-
-
-position: absolute;
-width: 106px;
-height: 29px;
-left: 740px;
-top: 91px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-
-
-color: #FFFFFF;
-}
-
-.text-alt{
-    /* Alternatives */
-
-
-position: absolute;
-width: 135px;
-height: 29px;
-left: 907px;
-top: 91px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-
-
-color: #FFFFFF;
-}
-
-.text-tool{
-    /* Recognizer Tool */
-
-
-position: absolute;
-width: 182px;
-height: 29px;
-left: 1103px;
-top: 91px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-
-
-color: #FFFFFF;
-}
 
 .text{
 
 /* Welcome to Eco Car Recognizer! */
 
 position: absolute;
-width: 1131px;
+/* width: 1131px; */
 height: 90px;
 left: 154px;
 top: 238px;
@@ -154,18 +97,21 @@ color: #000000;
 }
 
 .container {
-    position: absolute;
+    position: relative;
     width: 529px;
     height: 366px;
-    left: 771px;
-    top: 477px;
-    background: #9AB268;
+    left: 777px;
+    top: 472px;
+    background-color: #9AB268;
     border-radius: 60px;
+    padding: 20px;
+    z-index: 2;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    /* align-items: center; */
+    
   }
   
   .header {
@@ -175,34 +121,30 @@ color: #000000;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
+    
     color: #000000;
-    margin-bottom: 20px;
+   
   }
-  
-  .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+
+  .container ul{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
-    width: 33%;
-    height: 100%;
-    margin: 0 10px;
-    padding: 0;
-    list-style: none;
+    color: black;
+    /* width: 33%;
+    height: 100%; */
+    margin-bottom: 2px;
+    text-align: left;
+    word-wrap: break-word;
   }
-  
-  .list li {
-    margin-bottom: 10px;
+  img {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 1000px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    border-radius: 60px;
   }
-  li p {
-    padding-bottom: 10px;
-  }
-  ul {
-    margin-bottom: 10px;
-  }  

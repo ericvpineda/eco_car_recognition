@@ -27,38 +27,68 @@ line-height: 39px;
 
 color: #000000;
 }
-.ellipse {
-position: absolute;
-width: 136px;
-height: 126px;
-left: 650px;
-top: 506px;
-background: rgba(39, 65, 38, 0.7);
-border-radius: 50%;
+
+.navbar{
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 2rem
+  /* list-style:none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+.navitem{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
 }
 
-.logo-name{
-    /* EcoRecognizer */
-
-
-position: absolute;
-width: 232px;
-height: 39px;
-left: 211px;
-top: 86px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 39px;
+.navbarTitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
 /* identical to box height */
 
 text-align: center;
-
-color: #FFFFFF;
 }
 
+
+a:link, a:visited, a:active{
+  background-color: linear-gradient(to bottom, #9AB268, #000000);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  transition: 0.1ms;
+}
+.logo-name{
+  position: absolute;
+  width: 232px;
+  height: 39px;
+  left: 211px;
+  top: 86px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+
+  text-align: center
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+}
 .text-home{
     /* Home */
 
@@ -144,23 +174,23 @@ color: #FFFFFF;
 }
 
 .text{
-    /* text */
+      /* text */
 
 
-position: absolute;
-width: 937px;
-height: 53px;
-left: calc(50% - 937px/2 + 0.5px);
-top: 245px;
+  position: absolute;
+  width: 937px;
+  height: 53px;
+  left: calc(50% - 937px/2 + 0.5px);
+  top: 245px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
 
-color: #000000;
+  color: #000000;
 }
 
 .rectangle {
@@ -226,10 +256,10 @@ color: #000000;
     font-size: 0;
   }
 
-.image{/* material-symbols:upload-rounded */
+.image{
+    /* material-symbols:upload-rounded */
     display:flex;
     justify-content: center;
     align-items: center;
-
 }
 

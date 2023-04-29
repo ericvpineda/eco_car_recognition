@@ -1,0 +1,133 @@
+body {
+    background: linear-gradient(to bottom, #9AB268, rgb(0, 0, 0));
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+.navbar {
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+        /* list-style:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+
+.navitem {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.navbarTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+a:link,
+a:visited,
+a:active {
+    background-color: linear-gradient(to bottom, #9AB268, #000000);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    transition: 0.1ms;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    position: absolute;
+    width: 306px;
+    height: 263px;
+    left: 175px;
+    top: 380px;
+    background: #D9D9D9;
+    border-radius: 45px
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    position: absolute;
+    width: 306px;
+    height: 263px;
+    left: 567px;
+    top: 380px;
+
+    background: #D9D9D9;
+    border-radius: 45px;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    position: absolute;
+    width: 306px;
+    height: 263px;
+    left: 959px;
+    top: 380px;
+    background: #D9D9D9;
+    border-radius: 45px;
+}
+
+.text2 {
+    position: absolute;
+    width: 1131px;
+    height: 90px;
+    left: calc(50% - 1131px/2 + 0.5px);
+    top: 702px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: white;
+
+}
