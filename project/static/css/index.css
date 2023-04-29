@@ -1,0 +1,21 @@
+.name{
+    /* Eco Recognizer Tool */
+
+
+position: absolute;
+width: 314px;
+height: 39px;
+left: calc(50% - 314px/2);
+top: 186px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
