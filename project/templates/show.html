@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/show.css">
     <title>Clean Car AI</title>
 </head>
-<body>
+<body class="container">
 
-    <h1>{{name}}</h1>
-    <h2>{{prob}}</h2>
-    <img src={{image_raw}} alt="">    
-    
+    <div class="car-item">
+        <h1>{{name}}</h1>
+        <h2>Confidence rate: {{prob}}%</h2>
+        {% comment %} <img src={{image_raw}} alt="">     {% endcomment %}
+        
+    </div>
+   
 </body>
 </html>
