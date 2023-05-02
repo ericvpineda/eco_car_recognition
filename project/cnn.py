@@ -93,17 +93,26 @@ test_generator = test_generator_data.flow_from_directory(
 model = tf.keras.models.load_model("./model")
 
 # Names of labels used
-label_names = list(train_generator.class_indices.keys())
+names = list(train_generator.class_indices.keys())
 
-# Extract random feature/sampel
-feature = np.array([np.array(test_generator[0][0][0])])
-feature = feature.reshape(feature.shape[0], img_size, img_size, 3)
 
-# Predict based on saved model
-prediction = model.predict(feature)
-prediction_label = np.argmax(prediction)
-prediction_prob = prediction[0][prediction_label]
+# Note: test_generator is batches of 32 images (default)
+images = test_generator[0][0]
+labels = test_generator[0][1]
 
-print('Prediction label:', prediction_label)
-print('Expected label:', int(test_generator[0][1][0]))
-print('CNN predicted output label with probability:', prediction_prob)
+for i in range(7):
+    
+    # Convert PIL images to numpy array
+    feature = tf.keras.preprocessing.image.img_to_array(images[i])
+    # Add extra dimension to 0th axis
+    feature = tf.expand_dims(feature, 0)
+
+    # Predict based on saved model
+    prediction = model.predict(feature)
+    prediction_label = np.argmax(prediction)
+    prediction_prob = prediction[0][prediction_label]
+
+    print('Prediction label:', prediction_label)
+    print('Expected label:', int(labels[i]))
+    print('CNN predicted output label with probability:', prediction_prob)
+    
