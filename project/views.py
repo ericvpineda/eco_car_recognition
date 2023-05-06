@@ -1,14 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from project.models import Car
 import tensorflow as tf
 from PIL import Image
 from pathlib import Path
 import numpy as np
-from keras.preprocessing.image import ImageDataGenerator
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 car_names = ['Audi', 'Hyundai Creta', 'Mahindra Scorpio', 'Rolls Royce', 'Swift', 'Tata Safari', 'Toyota Innova']
+model = tf.keras.models.load_model('C:/Users/evpin/Desktop/coding/projects/hackathons/eco_car_recognition/project/model')
 
 # Create your views here.
 
@@ -25,16 +24,14 @@ def aboutus(request):
 def index(request):
     if request.method == "POST":
         # TODO: Fix path 
-        model = tf.keras.models.load_model('C:/Users/evpin/Desktop/coding/projects/hackathons/eco_car_recognition/project/model')
         loaded_image = Image.open(request.FILES["car_image"])
         loaded_image = loaded_image.resize((128, 128))
         loaded_image = np.array(loaded_image) / 255
-        feature = tf.keras.preprocessing.image.img_to_array(loaded_image)
-        feature = tf.expand_dims(feature, 0)
+        preprocessed_image = tf.keras.preprocessing.image.img_to_array(loaded_image)
+        preprocessed_image = tf.expand_dims(preprocessed_image, 0)
 
         # Test with model 
-        prediction = model.predict(feature)
-        print("DEBUG: prediction=", prediction)
+        prediction = model.predict(preprocessed_image)
         prediction_label = np.argmax(prediction)
         prob = prediction[0][prediction_label]
 
