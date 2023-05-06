@@ -10,8 +10,11 @@
 
     {% comment %} <link rel="stylesheet" href="{% static 'css/base.css' %}"> {% endcomment %}
     {% block header %}{% endblock header %}
+
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
 </head>
 <body>
+    {% include 'partials/navbar.html' %}
 
     {% block body %}{% endblock body %}
     
