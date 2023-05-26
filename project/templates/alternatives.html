@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alternatives Page</title>
-  <link rel="stylesheet" href="../static/css/alternatives.css">
-</head>
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block header %}
+  <link rel="stylesheet" href="{% static 'css/alternatives.css' %}">
+{% endblock header %}
+
+{% block body %}
 <body>
   <div class="header">
     <h1>Alternatives</h1>
@@ -92,4 +92,4 @@
       </div>
 
 </body>
-</html>
+{% endblock body %}
