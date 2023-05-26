@@ -7,15 +7,21 @@
 
 {% block body %}
 <body class="bg-image">
-  <div class="gradient-overlay"></div>
+
+  <div class="gradient-overlay"/>
   
-    <div class="content">
-      <h1>ECO CAR AI</h1>
-      <p>The innovative web app that helps you make informed choices for sustainable transportation. Join us on this eco-friendly journey and drive towards a cleaner, sustainable future.</p>
-      <a href="{% url 'index' %}" class="try-it-button">
-        Try it here
-        <span class="arrow">&#8594;</span>
-      </a>
-    </div>
+  <div class="content">
+
+    <h1>ECO CAR AI</h1>
+    
+    <p>The innovative web app that helps you make informed choices for sustainable transportation. Join us on this eco-friendly journey and drive towards a cleaner, sustainable future.</p>
+    
+    <a href="{% url 'index' %}" class="try-it-button">
+      Try it here
+      <span class="arrow">&#8594;</span>
+    </a>
+  
+  </div>
+
 </body>
 {% endblock body %}
