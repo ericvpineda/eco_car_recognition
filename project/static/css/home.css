@@ -35,7 +35,6 @@ body {
   }
   
   .content {
-
     width: 70%;
 
     display: flex;
@@ -44,8 +43,9 @@ body {
     align-items: center;    
     
     text-align: center;
+    color: white;
 
-    /* Place content above linear backdrop  */
+    /* Places content above linear backdrop  */
     z-index: 2;
   }
   
@@ -80,10 +80,9 @@ body {
   .try-it-button .arrow {
     margin-left: 5px;
   }
-
-  #logo {
-    max-height: 2px !important;
-    max-width: 2px !important;
+  
+  .nav-link-home {
+    text-decoration: underline !important;
   }
   
   

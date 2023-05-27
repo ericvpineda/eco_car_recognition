@@ -1,18 +1,17 @@
-<nav class="navbar">
-<div class="container d-flex justify-content-center">
-    <a class="navbar-brand" href="home.html">
-        
-        {% comment %} <img id="logo" src="../static/img/ecoCarLogo.png" alt=""> {% endcomment %}
-        {% comment %} <div class="logo-text"> {% endcomment %}
-        {% comment %} </div> {% endcomment %}
-    </a>
+{% load static %}
+
+<nav class="navbar-custom">
+    <div>
+        <a class="navbar-brand d-none d-md-block" href="{% url 'home' %}">
+            <img id="logo" src="{% static 'img/logo.png' %}" alt="">
+        </a>
+    </div>
     <div class="navbar-links">
         <ul>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'aboutus' %}">About Us</a></li>
-        <li><a href="{% url 'alternatives' %}">Alternatives</a></li>
-        <li><a href="{% url 'index' %}">Recognizer Tool</a></li>
+            <li><a class="nav-link-home" href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'alternatives' %}">Alternatives</a></li>
+            <li><a href="{% url 'index' %}">Recognizer Tool</a></li>
         </ul>
-    </div>
     </div>
 </nav>

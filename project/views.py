@@ -5,6 +5,7 @@ from PIL import Image
 from pathlib import Path
 import numpy as np
 
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 car_names = ['Audi', 'Hyundai Creta', 'Mahindra Scorpio', 'Rolls Royce', 'Swift', 'Tata Safari', 'Toyota Innova']
 model = tf.keras.models.load_model('C:/Users/evpin/Desktop/coding/projects/hackathons/eco_car_recognition/project/model')

@@ -1,29 +1,22 @@
    
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  .navbar-custom {
+    width: 90%;
+
+    position: fixed;
+    top: 1.5rem;
     background-color: transparent;
     z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     
     text-align: center;
+    color: white;
   }
   
-  .navbar .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .navbar .navbar-brand {
-    display: inline-block;
-    align-items: center;
+  .navbar-brand {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -31,25 +24,10 @@
     font-size: 23px;
   }
   
-  .navbar .logo {
-    height: 30px; /* Adjust the height as needed */
-    display: inline-block;
-    align-items: center;
-  }
-  
-  .navbar .logo img {
-    height: 100%;
-    width: auto;
-    max-width: 100%; /* Limit the maximum width of the logo */
-  }
-  
-  
-  .navbar .logo-text {
-    color: white;
-  }
-  
   .navbar-links ul {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -70,3 +48,9 @@
     color: #D6EB56BF;
   }
   
+  #logo {
+    height: 4rem;
+    width: 4rem;
+  
+    z-index: 2;
+  }
